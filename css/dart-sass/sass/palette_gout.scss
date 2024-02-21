@@ -1,4 +1,65 @@
 @media (max-width: 769px) {
+
+	header {
+		height: 63px;
+		.arrow-and-logo-container {
+			position: relative;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// padding-left: 23px;
+			.index-arrow {
+				left: 23px;
+				position: absolute;
+				width: 16px;
+				height: 17px;
+				// margin-right: 48px;
+
+				img {
+					transform: scaleX(-1);
+				}
+			}
+
+			.restaurant-header-logo {
+				display: flex;
+				justify-content: center;
+			}
+		}
+		// .index-arrow {
+		// 	height: 16px;
+		// 	width: 17px;
+		// 	display: flex;
+		// 	align-items: center;
+							
+		// 	img {					
+		// 		height: 100%;
+		// 		width: 100%;
+		// 		display: flex;
+		// 		// padding-top: 0px;
+		// 		transform: scaleX(-1);
+		// 	}		
+		// }
+		
+		.restaurant-header-logo {
+
+			// align-items: center;
+			position: relative;
+            display: flex;
+            height: 63px;
+            justify-content: center;
+
+			.logo {
+				display: flex;
+                padding-top: 14px;
+                padding-bottom: 13px;
+			}
+			
+			
+			
+		}		
+	}
+	
 	main {
 		position: relative;
 
@@ -106,9 +167,15 @@
 						
 
                         .menu-container-dish-item-text {
+							display: flex;
+							flex-direction: column;
 							flex: 1 1 auto;
 							overflow: hidden;
                             // margin-left: 15px;
+
+							
+							text-overflow : ellipsis;
+							white-space: nowrap;
 
                             .menu-container-dish-item-title {
                                 font-weight: 500;

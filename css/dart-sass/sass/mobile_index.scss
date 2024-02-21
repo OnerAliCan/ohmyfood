@@ -8,10 +8,10 @@
         .header-logo {
             display: flex;
             height: 63px;
+            justify-content: center;
             
-            img {
-                // box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
-                width: 100%;
+            .logo {
+                display: flex;
                 padding-top: 14px;
                 padding-bottom: 13px;
             }
