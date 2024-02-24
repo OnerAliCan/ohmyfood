@@ -1,0 +1,242 @@
+@media (max-width: 769px) {
+    header {
+        height: 63px;
+        .arrow-and-logo-container {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // padding-left: 23px;
+            .index-arrow {
+                left: 23px;
+                position: absolute;
+                width: 16px;
+                height: 17px;
+                // margin-right: 48px;
+
+                img {
+                    transform: scaleX(-1);
+                }
+            }
+
+            .restaurant-header-logo {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        // .index-arrow {
+        // 	height: 16px;
+        // 	width: 17px;
+        // 	display: flex;
+        // 	align-items: center;
+
+        // 	img {
+        // 		height: 100%;
+        // 		width: 100%;
+        // 		display: flex;
+        // 		// padding-top: 0px;
+        // 		transform: scaleX(-1);
+        // 	}
+        // }
+
+        .restaurant-header-logo {
+            // align-items: center;
+            position: relative;
+            display: flex;
+            height: 63px;
+            justify-content: center;
+
+            .logo {
+                display: flex;
+                padding-top: 14px;
+                padding-bottom: 13px;
+            }
+        }
+    }
+
+    main {
+        position: relative;
+
+        .presentation-img-container {
+            width: 100%;
+
+            img {
+                height: 240px;
+                width: 100%;
+                display: block;
+                object-fit: cover;
+            }
+        }
+
+        .menu-container {
+            position: relative;
+            z-index: 10;
+            margin-top: -38px;
+            // position: absolute;
+            // top: 275px;
+            padding: 32px;
+            width: 100%;
+            // height: 1008px;
+            background-color: #f6f6f6;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            box-sizing: border-box;
+
+            .menu-container-title {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+
+                .menu-container-title-name {
+                    font-family: "Shrikhand";
+                    font-size: 28px;
+                    // height: 29px;
+                    margin-bottom: 40px;
+                }
+
+                .menu-container-title-heart {
+                    width: 47px;
+                    height: 21px;
+                    position: relative;
+
+                    .blank-heart-svg {
+                        position: absolute;
+                        right: 25px;
+                        width: 22px;
+                        // height: 100%;
+                        top: 50%;
+                        opacity: 1;
+
+                        &:hover {
+                            opacity: 0;
+                        }
+                    }
+
+                    .purple-heart-svg {
+                        position: absolute;
+                        right: 25px;
+                        width: 22px;
+                        // height: 100%;
+                        top: 50%;
+                        fill: linear-gradient(
+                            182deg,
+                            #dc6eda,
+                            #c065db 50%,
+                            #a25bdc
+                        );
+                        opacity: 0;
+                        transition: opacity 0.3s ease;
+
+                        &:hover {
+                            opacity: 1;
+                            transition-duration: 0.3s;
+                        }
+                    }
+                }
+            }
+
+            .menu-container-dish {
+                margin-bottom: 40px;
+
+                .menu-container-dish-title {
+                    font-size: 16px;
+                    font-weight: lighter;
+                }
+
+                .menu-container-dish-title-green {
+                    border-bottom: 3px solid #99e2d0;
+                    width: 40px;
+                    margin-bottom: 12px;
+                }
+                .menu-container-dish-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    .menu-container-dish-item {
+                        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                        background-color: #ffffff;
+                        border-radius: 15px;
+                        height: 69px;
+                        display: flex;
+                        align-items: center;
+                        // padding-left: 15px;
+                        gap: 15px;
+
+                        .menu-container-dish-item-text {
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1 1 auto;
+                            overflow: hidden;
+                            // margin-left: 15px;
+                            padding: 19px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+
+                            .menu-container-dish-item-title {
+                                font-weight: 500;
+                                font-size: 18px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+
+                            .menu-container-dish-item-description {
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        .menu-container-dish-item-price {
+                            font-weight: bold;
+                            // padding-right: 15px;
+                        }
+                    }
+                }
+            }
+
+            .order-container-button-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    box-sizing: border-box;
+                    padding: 0;
+                    height: 50px;
+                    width: 50%;
+                    border-radius: 25px;
+                    border: none;
+                    background: linear-gradient(
+                        182deg,
+                        #dc6eda,
+                        #c065db 50%,
+                        #a25bdc
+                    );
+                    // background: linear-gradient(182deg, #FFF, #000);
+                    margin-bottom: 57px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                    transition: filter 0.15s ease, box-shadow 0.15s ease;
+
+                    &:hover {
+                        filter: brightness(115%);
+                        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+                    }
+
+                    p {
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@media (max-width: 769px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   header {
     height: 63px;
   }
@@ -177,4 +177,4 @@
   }
 }
 
-/*# sourceMappingURL=palette_gout.css.map */
+/*# sourceMappingURL=tablet_restaurant.css.map */

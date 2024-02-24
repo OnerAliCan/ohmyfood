@@ -2,19 +2,20 @@
   position: relative;
   height: 100%;
   width: 0px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  box-sizing: border-box;
 }
 .menu-container-dish-item .green-box svg {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 20px;
   height: 20px;
   width: 20px;
-  fill: #99E2D0;
+  fill: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,10 +37,11 @@
 
 @keyframes slideIn {
   from {
-    width: 0;
+    flex: 0 0 0;
   }
   to {
-    width: 59px;
+    flex: 0 0 59px;
+    padding: 19px;
   }
 }
 @keyframes slideOut {

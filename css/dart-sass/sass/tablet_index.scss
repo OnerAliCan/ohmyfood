@@ -1,4 +1,4 @@
-@media (max-width: 769px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     body {
         margin: 0;
     }
@@ -106,8 +106,14 @@
             }
         }
     }
+
+    //changements faits
     .steps-container {
         padding-bottom: 68px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .steps-container-title {
             h2 {
@@ -120,9 +126,9 @@
         }
         .steps-container-steps {
             display: flex;
-            flex-direction: column;
-            margin-left: 32px;
-            margin-right: 20px;
+            // flex-direction: column;
+            // margin-left: 32px;
+            // margin-right: 20px;
             width: 86%;
             gap: 25px;
 
@@ -141,8 +147,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 25px;
-                    height: 25px;
+                    width: 30px;
+                    height: 24px;
                     border-radius: 50%;
                     background-color: #a25bdc;
                     font-size: 14px;
@@ -175,6 +181,7 @@
         flex-direction: column;
         // align-items: center;
         width: 100%;
+        padding-bottom: 30px;
 
         .restaurants-section-title {
             padding-left: 18px;
@@ -182,16 +189,19 @@
 
         .restaurants-section-container {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            // flex-direction: column;
             gap: 18px;
 
-            padding-left: 18px;
-            padding-right: 18px;
-            padding-bottom: 68px;
+            // padding-left: 18px;
+            // padding-right: 18px;
+            // padding-bottom: 68px;
 
             a {
                 text-decoration: none;
                 color: #000000;
+                width: 45%;
 
                 .restaurants-section-card {
                     height: 251px;

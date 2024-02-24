@@ -1,26 +1,24 @@
 .menu-container-dish-item {
     .green-box {
-
         position: relative;
         height: 100%;
         width: 0px;
-        background-color: #99E2D0;
+        background-color: #99e2d0;
         display: flex;
         align-items: center;
         justify-content: center;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
+        box-sizing: border-box;
         // border-radius: 15px;
         // animation: slideIn 1s ease-in-out forwards;
 
-        
-
         svg {
-            background-color: #FFFFFF;
+            background-color: #ffffff;
             border-radius: 20px;
             height: 20px;
             width: 20px;
-            fill: #99E2D0;
+            fill: #99e2d0;
             // animation: fadeIn 1s ease-in-out forwards;
             display: flex;
             justify-content: center;
@@ -29,52 +27,31 @@
             box-sizing: border-box;
         }
     }
-    
+
     &:hover .green-box {
         animation: slideIn 0.5s ease-in-out forwards;
-    
+
         svg {
-          animation: fadeIn 0.5s ease-in-out forwards;
+            animation: fadeIn 0.5s ease-in-out forwards;
         }
-      }
-    
-      &:not(:hover) .green-box {
+    }
+
+    &:not(:hover) .green-box {
         animation: slideOut 0.5s ease-in-out forwards;
-    
+
         svg {
-          animation: fadeOut 0.5s ease-in-out forwards;
+            animation: fadeOut 0.5s ease-in-out forwards;
         }
-      }
-     
+    }
 }
-
-
-
-// .menu-container-dish-item:not(:hover) {
-//     .green-box {
-//         animation: fadeOut 1s ease-in-out forwards;
-//     }
-
-//     svg {
-//       animation: fadeOut 1s ease-in-out forwards;
-//     }
-
-//     @keyframes fadeOut {
-//         from {
-//             opacity: 1;
-//         }
-//         to {
-//             opacity: 0;
-//         }
-//     }
-
 
 @keyframes slideIn {
     from {
-        width: 0;
+        flex: 0 0 0;
     }
     to {
-        width: 59px;
+        flex: 0 0 59px;
+        padding: 19px;
     }
 }
 
@@ -94,7 +71,7 @@
     to {
         opacity: 1;
     }
-}  
+}
 
 @keyframes fadeOut {
     from {
