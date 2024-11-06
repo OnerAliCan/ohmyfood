@@ -1,6 +1,6 @@
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1025px) {
   header {
-    height: 63px;
+    height: 96px;
   }
   header .arrow-and-logo-container {
     position: relative;
@@ -35,6 +35,9 @@
   }
   main {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   main .presentation-img-container {
     width: 100%;
@@ -46,11 +49,13 @@
     object-fit: cover;
   }
   main .menu-container {
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 10;
     margin-top: -38px;
     padding: 32px;
-    width: 100%;
+    width: 1055px;
     background-color: #f6f6f6;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -58,8 +63,8 @@
   }
   main .menu-container .menu-container-title {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 24px;
   }
   main .menu-container .menu-container-title .menu-container-title-name {
     font-family: "Shrikhand";
@@ -86,7 +91,6 @@
     right: 25px;
     width: 22px;
     top: 50%;
-    fill: linear-gradient(182deg, #dc6eda, #c065db 50%, #a25bdc);
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -153,7 +157,7 @@
     box-sizing: border-box;
     padding: 0;
     height: 50px;
-    width: 50%;
+    width: 186px;
     border-radius: 25px;
     border: none;
     background: linear-gradient(182deg, #dc6eda, #c065db 50%, #a25bdc);

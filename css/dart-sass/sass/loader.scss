@@ -6,6 +6,9 @@
     background-color: white;
     animation: disappear 1s forwards;
     animation-delay: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes disappear {
@@ -30,8 +33,6 @@
     transform-origin: 170px 0;
     z-index: 10;
     perspective: 300px;
-    top: 50%;
-    left: 30%;
 }
 .loader::before {
     content: "";

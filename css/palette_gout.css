@@ -86,7 +86,6 @@
     right: 25px;
     width: 22px;
     top: 50%;
-    fill: linear-gradient(182deg, #dc6eda, #c065db 50%, #a25bdc);
     opacity: 0;
     transition: opacity 0.3s ease;
   }

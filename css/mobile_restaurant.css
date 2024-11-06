@@ -86,7 +86,6 @@
     right: 25px;
     width: 22px;
     top: 50%;
-    fill: linear-gradient(182deg, #dc6eda, #c065db 50%, #a25bdc);
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -153,7 +152,7 @@
     box-sizing: border-box;
     padding: 0;
     height: 50px;
-    width: 50%;
+    width: 186px;
     border-radius: 25px;
     border: none;
     background: linear-gradient(182deg, #dc6eda, #c065db 50%, #a25bdc);
